@@ -292,11 +292,14 @@ footer {
     margin: 10% 0 20% 0;
 }
 
-.fab, .fas{
-    margin: auto;
-    padding: 2px;
-    color: hsl(192, 100%, 9%);
-    background-color: white;
+.fas{
+  margin:0;
+  color:white;
+}
+
+.socialMedia a{
+    margin-left: 5%;
+    color:  white;
 }
 
 .newsLetter h4{
