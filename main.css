@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    font-family: "Open sans", sans-serif;
+
     overflow-x: hidden;
     padding: 0;
     margin: 0;
@@ -12,11 +12,11 @@ body {
 
 h1 , h2{
     font-family: "Poppins", sans-serif;
-
 }
 
 p {
   font-family: "Open sans", sans-serif;
+  font-weight: 400;
 }
 /* Header */
 
@@ -24,7 +24,7 @@ nav {
   margin: 2.5rem 0;
 }
 
-.container img{
+nav img{
   width: 20%;
 }
 
@@ -32,9 +32,9 @@ nav .btn {
   color: hsl(322, 100%, 66%);
   border: 1px solid hsl(322, 100%, 66%);
   border-radius: 50px;
-  padding: 5px 15px;
+  padding: 4px 15px;
   cursor: pointer;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   transition: all 0.3s ease 0s;
 }
 
@@ -48,72 +48,78 @@ nav .btn:hover{
 /* Main */
 
 .intro img {
-    display: block;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10%;
+  display: block;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
 }
 
 .intro h1{
-    margin: 0 5%;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
+  margin: 0 5% auto;
+  text-align: center;
+  width: 95%;
 }
 
 .intro .btn {
-      margin-left: 38%;
+  margin-left: 35%;
+  width: 30%;
   color: #fff;
   background-color: hsl(322, 100%, 66%);
   border-radius: 50px;
   padding: 15px 55px;
   transition-duration: 0.4s;
-
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .intro .btn:hover{
   color: hsl(322, 100%, 66%);
   background-color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-
 }
 
 .intro .container p {
-    width: 50%;
+    width: 46%;
     margin: 50px auto;
     text-align: center;
 }
+
 
 .stats .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;
-    margin-top: 5%;
 }
 
 .communities, .messages {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-
 }
 
 .communities img, .messages img {
-    padding-top: 40px;
-    margin-left: 0;
+    padding-top: 75px;
+    margin-left: 6px;
 }
 
-.communities h2, .messages h2 {
+.communities .heading, .messages .heading {
     margin-top: 0;
     text-align: start;
     font-family: "Poppins", sans-serif;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px gray;
 }
 
-.communities p, .messages p {
+.communities .text, .messages .text {
     width: 100%;
     margin-left: 0px;
     text-align: center;
+    font-size: medium;
+    font-weight: 400;
+    color: gray;
 }
+
 
 .together img {
     width: 100%;
@@ -133,7 +139,7 @@ nav .btn:hover{
 
 .grow h2 {
     margin-top: 25%;
-    margin-left: 14%;
+    margin-left: 16%;
     text-align: left;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
@@ -182,7 +188,7 @@ img.bg {
 }
 
 .users {
-    margin-top: 10%;
+    padding-top: 10%;
 }
 
 .usersChat {
@@ -191,12 +197,16 @@ img.bg {
     background-color: hsl(207, 100%, 98%);
 }
 
+.usersChat .userImg {
+  width: 80%;
+}
+
 .users img{
   width: 100%;
 }
 
 .usersChat h2 {
-    margin-top: 25%;
+    margin-top: 15%;
     margin-left: 14%;
     text-align: left;
     font-family: "Poppins", sans-serif;
@@ -235,6 +245,7 @@ img.bg {
     transition-duration: 0.4s;
     text-decoration: none;
     justify-content: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
 .getStarted:hover{
@@ -266,44 +277,44 @@ footer {
 }
 
 .contacts {
-    margin-left: 20%;
+    padding-left: 20%;
 }
 
 .contacts p {
-    margin-left: 0;
     margin-top: 4%;
     font-size: 12px;
-    text-align: start;
     width: 50%;
 }
 
-.contacts img {
-    width: 40%;
-    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-    margin-top: 8%;
+.contacts .icon {
+  width: 6%;
+  filter: brightness(100%);
+  margin: -3px 10px 0 0;
 }
 
-.phoneEmail {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 50%;
-    margin-bottom: 20%;
+.contacts img {
+    width: 45%;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(100%) contrast(100%);
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+.phEm, .p{
+  padding: 0 ;
 }
 
 .socialMedia {
     display: grid;
-    grid-template-columns: 30px 30px 30px;
+    grid-template-columns: 40px 40px 40px;
     margin: 10% 0 20% 0;
 }
 
-.fas{
-  margin:0;
-  color:white;
+.socialMedia a{
+    color:  white;
 }
 
-.socialMedia a{
-    margin-left: 5%;
-    color:  white;
+.newsLetter{
+  padding-left: 20%;
+  padding-top: 1%;
 }
 
 .newsLetter h4{
@@ -318,29 +329,29 @@ footer {
     margin-top: 4%;
     font-size: 12px;
     text-align: start;
-    width: 40%;
+    width: 50%;
 }
 
 .signUp input[type=text] {
-  width: 32%;
-  padding: 8px 20px;
+  width: 50%;
+  padding: 7px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border: 2px solid hsl(192, 100%, 9%);
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .signUp .subscribe{
   background-color: hsl(322, 100%, 66%);
   border: none;
   color: white;
-  padding: 8px 20px;
+  padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 20px;
-  border-radius: 15px;
+  border-radius: 6px;
   cursor: pointer;
 }
 
@@ -348,4 +359,205 @@ footer {
   color: hsl(322, 100%, 66%);
   background-color: white;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* Media */
+
+@media (max-width: 400px) {
+  .container {
+    padding: 0 7%;
+  }
+
+  h1 {
+    font-size: 1.7rem !important;
+    }
+  h2 {
+      font-size: 1.5rem !important;
+      font-weight: 700;
+  }
+
+  nav {
+    margin: 2rem 0;
+  }
+  nav img {
+    width: 40%;
+  }
+  nav .btn {
+    padding: 4px 15px;
+    font-size: 0.8rem;
+    margin-left: 4%;
+  }
+
+  .intro {
+    margin-top: 20%;
+  }
+  .intro .container p{
+    width: 99%;
+  }
+  .intro .btn{
+    width: 82%;
+    margin-left: 9%;
+  }
+  .intro img{
+    margin-top: 25%;
+  }
+
+
+  .stats .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .communities img, .messages img {
+    padding-top: 82px;
+    margin-left: 22px;
+    width: 20%;
+  }
+  .communities, .messages {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    margin-left: 15%;
+  }
+
+  .communities .heading, .messages .heading{
+    text-align: center;
+  }
+
+  .communities .text, .messages .text {
+    width: 90%;
+    text-align: center;
+  }
+
+  .growTogether {
+    grid-template-columns: 1fr;
+  }
+  .grow {
+    grid-row: 2;
+  }
+  .growTogether img {
+    grid-row: 1;
+    margin-bottom: 20%;
+    margin-top: 15%;
+  }
+  .grow h2{
+    margin-top: 3%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .together p{
+    width: 80%;
+    text-align:center;
+    margin-bottom: 10%;
+  }
+
+
+  .conversation {
+    grid-template-columns: 1fr;
+    margin-top: 30%;
+    padding: 4%;
+  }
+  .conversation img{
+    text-align: center;
+    margin: 0;
+    padding: 8%;
+    width: 100%;
+  }
+  .conversation h2 {
+   margin-top: 10%;
+   margin-left: 0;
+   text-align: center;
+   padding: 0 ;
+ }
+ .conversation p {
+   width: 88%;
+   text-align:center;
+   margin: 0 auto;
+   margin-top: 5%;
+ }
+
+  .usersChat {
+    grid-template-columns: 1fr;
+  }
+  .usersChat .userImg {
+    width: 80%;
+    margin: 2% auto;
+  }
+  .chats {
+    grid-row: 2;
+    padding: 10%;
+  }
+  .chats h2 {
+    margin-top: 10%;
+    margin-left: 0;
+    text-align: center;
+    padding: 0 ;
+  }
+  .usersChat img {
+    grid-row: 1;
+  }
+  .usersChat p{
+    width: 100%;
+    text-align:center;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+
+  .buildCommunity{
+    padding: 20% 10% 20% 10% ;
+  }
+  .buildCommunity h2 {
+    margin: 0 0 20% 0;
+    text-align: center;
+  }
+  .getStarted{
+   width: 82%;
+   margin-left: 10%;
+   margin-top: 10%;
+ }
+
+  .bottomLabel {
+    grid-template-columns: 1fr;
+  }
+
+  .newsLetter {
+    grid-row: 1;
+    padding: 4% 0 0 8%;
+  }
+
+  .newsLetter h4{
+    margin-left: 5%;
+    text-align: left;
+  }
+  .newsLetter p {
+    margin: 6% 0 9% 5%;
+    text-align: left;
+    width: 75%;
+    font-size: 13px;
+  }
+
+  .signUp input[type="text"] {
+    display: block;
+    width: 90%;
+    height: 45px;
+    margin: 5% 0 0 -5% ;
+  }
+
+  .signUp{
+    margin-left: 10%;
+  }
+  .signUp .subscribe {
+    height: 42px;
+    width: 40%;
+    font-size: large;
+    margin: 4% 0 4% 44%;
+  }
+
+  .contacts {
+    padding-left: 10%;
+  }
+  .contacts p{
+    margin: 6% 0 9% 0;
+    width: 78%;
+    font-size: 13px;
+  }
+
 }
