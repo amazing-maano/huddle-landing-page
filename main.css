@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    width: 100%  ;
 
     overflow-x: hidden;
     padding: 0;
@@ -379,7 +379,7 @@ footer {
     margin: 2rem 0;
   }
   nav img {
-    width: 40%;
+    width: 46%;
   }
   nav .btn {
     padding: 4px 15px;
@@ -408,14 +408,14 @@ footer {
   }
   .communities img, .messages img {
     padding-top: 82px;
-    margin-left: 22px;
+    margin-left: 40px;;
     width: 20%;
   }
   .communities, .messages {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
-    margin-left: 15%;
+
   }
 
   .communities .heading, .messages .heading{
@@ -423,7 +423,7 @@ footer {
   }
 
   .communities .text, .messages .text {
-    width: 90%;
+    width: 100%;
     text-align: center;
   }
 
