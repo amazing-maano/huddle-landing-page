@@ -6,8 +6,11 @@ body {
     margin: 0;
 }
 
-.container {
+.container{
   padding: 2% 3%;
+  display:block;
+  justify-content:center;
+  text-align: center;
 }
 
 h1 , h2{
@@ -20,25 +23,31 @@ p {
 }
 /* Header */
 
-nav {
+.nav {
   margin: 2.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
-nav img{
-  width: 20%;
+.nav img{
+  width: 22%;
 }
 
-nav .btn {
+.nav .button {
+
   color: hsl(322, 100%, 66%);
   border: 1px solid hsl(322, 100%, 66%);
   border-radius: 50px;
-  padding: 4px 15px;
+  padding: 5px 25px;
   cursor: pointer;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   transition: all 0.3s ease 0s;
+  text-decoration: none;
 }
 
-nav .btn:hover{
+nav .button:hover{
   color: hsl(207, 100%, 98%);
   background-color: hsl(322, 100%, 66%);
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
@@ -56,26 +65,29 @@ nav .btn:hover{
 }
 
 .intro h1{
-  margin: 0 5% auto;
+
   text-align: center;
-  width: 95%;
+
 }
 
-.intro .btn {
-  margin-left: 35%;
-  width: 30%;
-  color: #fff;
-  background-color: hsl(322, 100%, 66%);
-  border-radius: 50px;
-  padding: 15px 55px;
-  transition-duration: 0.4s;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
 
-.intro .btn:hover{
-  color: hsl(322, 100%, 66%);
-  background-color: white;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+.getStarted{
+    white-space: nowrap;
+    color: #fff;
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 50px;
+    padding: 15px 55px;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    justify-content: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+.getStarted:hover{
+    color: hsl(322, 100%, 66%);
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    text-decoration: none;
 }
 
 .intro .container p {
@@ -234,28 +246,6 @@ img.bg {
     font-weight: 700;
 }
 
-
-.getStarted{
-
-    margin-left: 40%;
-    color: #fff;
-    background-color: hsl(322, 100%, 66%);
-    border-radius: 50px;
-    padding: 15px 55px;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    justify-content: center;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  }
-
-.getStarted:hover{
-    color: hsl(322, 100%, 66%);
-    background-color: white;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    text-decoration: none;
-}
-
-
 /* Footer */
 
 footer {
@@ -362,9 +352,9 @@ footer {
 }
 /* Media */
 
-@media (max-width: 400px) {
+@media (max-width:414px) {
   .container {
-    padding: 0 7%;
+    padding: 0 8%;
   }
 
   h1 {
@@ -375,14 +365,15 @@ footer {
       font-weight: 700;
   }
 
-  nav {
+  .nav {
     margin: 2rem 0;
   }
-  nav img {
-    width: 46%;
+  .nav img {
+    width: 42%;
+    height: auto;
   }
-  nav .btn {
-    padding: 4px 15px;
+  .nav .btn {
+    padding: 6px 15px;
     font-size: 0.8rem;
     margin-left: 4%;
   }
@@ -400,6 +391,10 @@ footer {
   .intro img{
     margin-top: 25%;
   }
+  .getStarted{
+   width: 82%;
+   margin-top: 10%;
+ }
 
 
   .stats .container {
@@ -408,7 +403,7 @@ footer {
   }
   .communities img, .messages img {
     padding-top: 82px;
-    margin-left: 40px;;
+    margin-left: 56px;
     width: 20%;
   }
   .communities, .messages {
@@ -444,7 +439,7 @@ footer {
     margin: 0 auto;
   }
   .together p{
-    width: 80%;
+    width: 75%;
     text-align:center;
     margin-bottom: 10%;
   }
@@ -468,7 +463,7 @@ footer {
    padding: 0 ;
  }
  .conversation p {
-   width: 88%;
+   width: 84%;
    text-align:center;
    margin: 0 auto;
    margin-top: 5%;
@@ -495,7 +490,7 @@ footer {
     grid-row: 1;
   }
   .usersChat p{
-    width: 100%;
+    width: 92%;
     text-align:center;
     margin: 0 auto;
     margin-top: 5%;
@@ -505,17 +500,14 @@ footer {
     padding: 20% 10% 20% 10% ;
   }
   .buildCommunity h2 {
-    margin: 0 0 20% 0;
+    margin: 0 8% 15% 8%;
     text-align: center;
+
   }
-  .getStarted{
-   width: 82%;
-   margin-left: 10%;
-   margin-top: 10%;
- }
 
   .bottomLabel {
     grid-template-columns: 1fr;
+    padding: 4%;
   }
 
   .newsLetter {
